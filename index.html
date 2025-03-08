@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header
+      class="flex h-12 items-center justify-between bg-white px-2 md:h-14"
+    >
+      <div><h1 class="text-2xl font-[700]">KALAM_</h1></div>
+
+      <div class="hidden gap-10 sm:flex md:text-[1.2rem]">
+        <a
+          class="border-b-2 border-transparent duration-200 hover:border-black"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="border-b-2 border-transparent duration-200 hover:border-black"
+          href="#home"
+          >About me</a
+        >
+        <a
+          class="border-b-2 border-transparent duration-200 hover:border-black"
+          href="#skills"
+          >Skills</a
+        >
+        <a
+          class="border-b-2 border-transparent duration-200 hover:border-black"
+          href="#projects"
+          >Project</a
+        >
+        <a
+          class="border-b-2 border-transparent duration-200 hover:border-black"
+          href="#contact"
+          >Contact</a
+        >
+      </div>
+
+      <div class="sm:hidden">
+        <a href="#" class="hamburger-icon">
+          <img
+            class="w-10"
+            alt=""
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png"
+          />
+        </a>
+        <div class="hamburger-menu">
+          <a href="#home">Home</a>
+          <a href="#home">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hidden gap-4 md:flex">
+        <a href="https://github.com/abulkalam1s"
+          ><img class="w-8" src="./assets/github.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/abulkalam1s/"
+          ><img class="w-8" src="./assets/linkedin.png" alt=""
+        /></a>
+        <a href="#"><img class="w-8" src="./assets/twitter.png" alt="" /></a>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <div
+      id="home"
+      class="hero mb-12 flex flex-col justify-center items-center justify-around px-4 text-white md:flex-row sm:min-h-[calc(100vh-3.5rem)]"
+    >
+      <div
+        class="text flex items-center justify-center pt-4 sm:pt-0 xl:text-[130%]"
+      >
+        <div class="text-container">
+          <h2 class="text-[2rem] font-bold">Hello, It's me</h2>
+          <h1 class="text-[2.5rem] text-sky-400 font-black">Abul Kalam</h1>
+          <h2 class="text-[2rem] font-bold">
+            And I am a <span class="auto-type"></span>
+          </h2>
+          <!-- for auto text -->
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed(".auto-type", {
+              strings: ["MERN Developer", "Graphic Designer", "MERN Developer"],
+              typeSpeed: 150,
+              backSpeed: 150,
+              looped: true,
+            });
+          </script>
+          <p class="max-w-[700px] text-xl xl:mt-4 mt-4 font-semibold">
+            A passionate MERN Developer and UI/UX Enthusiast with a knack for
+            building dynamic, user-friendly web applications.
+          </p>
+          <div
+            class="download-btn-container mt-8 inline-block mt-2.5 rounded-3xl bg-sky-400 px-5 py-2 xl:mt-7"
+          >
+          <a
+                href="https://drive.google.com/file/d/1ejUZJfJ-CNhNpzSYMKhBoOXlRWptMP-Z/view?usp=drivesdk"
+              >
+            <button class="">Download CV</button>
+            <div class="ext_cv_links">
+              
+                <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="20px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image"></div>
+    </div>
+
+    <!-- Skill-Section -->
+    <div id="skills" class="skills px-4 text-white md:h-screen bg-gray-800">
+      <div class="skills-container flex flex-col justify-center items-center">
+        <h2
+          class="text-5xl font-semibold m-4 xl:mb-10 inline-block text-[2.5rem]"
+        >
+          Skills
+        </h2>
+
+        <!-- Frontend  -->
+        <div class="skill rounded-4xl border-2 md:flex">
+          <div
+            class="skill-heading flex basis-[30%] items-center justify-center"
+          >
+            <h2 class="px-4 text-4xl md:border-r md:pr-12">Frontend</h2>
+          </div>
+          <div
+            class="skill-container grid basis-[70%] grid-cols-2 sm:grid-cols-3 xl:grid-cols-4"
+          >
+            <div class="flex justify-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                HTML
+              </h4>
+            </div>
+            <div class="flex justify-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                CSS
+              </h4>
+            </div>
+            <div class="flex justify-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                JavaScript
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                React
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Tailwind CSS
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Next.js
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- backend -->
+        <div class="skill my-4 rounded-4xl border-2 md:flex">
+          <div
+            class="skill-heading flex basis-[30%] items-center justify-center"
+          >
+            <h2 class="px-4 text-4xl md:border-r md:pr-12">
+              <pre>Backend</pre>
+            </h2>
+          </div>
+          <div
+            class="skill-container grid basis-[70%] grid-cols-2 sm:grid-cols-3 xl:grid-cols-4"
+          >
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Node.js
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Express.js
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Rest API
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Authentication
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                MongoDB
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                MySQL
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design/Others -->
+        <div class="skill rounded-4xl border-2 md:flex">
+          <div
+            class="skill-heading flex basis-[30%] items-center justify-center"
+          >
+            <h2 class="px-4 text-4xl md:border-r md:pr-12">
+              <pre>Others </pre>
+            </h2>
+          </div>
+          <div
+            class="skill-container grid basis-[70%] grid-cols-2 sm:grid-cols-3 xl:grid-cols-4"
+          >
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Figma
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Canva
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                UI Design
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Version Control
+              </h4>
+            </div>
+            <div class="flex justify-center items-center p-4">
+              <h4
+                class="inline-block w-54 rounded-2xl bg-sky-400 px-2 py-2 text-center text-2xl tracking-wider"
+              >
+                Problem Solving
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------ -->
+    <!-- Projects Section -->
+    <div id="projects" class="projects text-white xl:h-screen">
+      <div
+        class="projects-container flex flex-col justify-center items-center pb-8"
+      >
+        <h2 class="title text-5xl font-semibold mt-4 mb-10">Projects</h2>
+        <div
+          class="each_p grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-8 xl:gap-12"
+        >
+          <!--  -->
+          <div class="card">
+            <a
+                href="https://github.com/abulkalam1s/Web_Development_Projects/tree/master/Amazon_Clone"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/project_image.jpg')"
+            ></div>
+            <div class="p_name">Amazon Clone</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/abulkalam1s"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/image2.jpg')"
+            ></div>
+            <div class="p_name">Job Application Tracker</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+          <div class="card">
+            <a
+                href="https://github.com/abulkalam1s/Web_Development_Projects/tree/master/Currency_Converter"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/image3.jpg')"
+            ></div>
+            <div class="p_name">Currency Converter</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/abulkalam1s"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/image4.jpg')"
+            ></div>
+            <div class="p_name">Workout App</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+          <div class="card">
+            <a href="https://github.com/abulkalam1s"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/image5.jpg')"
+            ></div>
+            <div class="p_name">Figma UI Design</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://github.com/abulkalam1s"
+                >
+            <div
+              class="p_image"
+              style="background-image: url('./assets/image1.jpg')"
+            ></div>
+            <div class="p_name">Responsive Portfolio</div>
+            <div class="ext_link">
+              <img
+                  src="./assets/ext_link.png"
+                  alt="external link"
+                  width="30px"
+              />
+            </div>
+          </a>
+          </div>
+        
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact-Section -->
+    <div
+      id="contact"
+      class="contact text-white flex flex-col h-screen items-center justify-center bg-gray-800"
+    >
+      <h2 class="text-5xl m-4 xl:mb-10">Contact</h2>
+      <div
+        class="container flex flex-col justify-center align-middle gap-4 max-w-2xl rounded-2xl p-6 shadow-[2px_4px_8px_rgba(255,255,255,0.6)]"
+      >
+        <div class="row1 flex flex-col sm:flex-row gap-3">
+          <input class="flex-1/2" type="text" placeholder="Enter Name" />
+          <input class="flex-1/2" type="email" placeholder="Enter Email" />
+        </div>
+        <div class="row2 flex flex-col sm:flex-row gap-3">
+          <input class="flex-1/2" type="phone" placeholder="Phone number" />
+          <input class="flex-1/2" type="text" placeholder="Enter Subject" />
+        </div>
+        <textarea
+          class="w-[100%]"
+          name="message"
+          id="message"
+          cols="60"
+          rows="8"
+        ></textarea>
+        <button class="bg-cyan-400 py-1.5 rounded-xl" type="submit">
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer-Section -->
+    <footer class="bg-gray-900 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col items-center justify-center gap-4"
+      >
+        <!-- Social Media Links -->
+        <div class="flex gap-6">
+          <a
+            href="https://github.com/abulkalam1s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="w-8 hover:opacity-80 transition-opacity"
+              src="./assets/white_github.png"
+              alt="GitHub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abulkalam1s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="w-8 hover:opacity-80 transition-opacity"
+              src="./assets/white_linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img
+              class="w-8 hover:opacity-80 transition-opacity"
+              src="./assets/white_twitter.png"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+
+        <!-- Copyright Notice -->
+        <p class="text-sm text-gray-400">
+          &copy; 2025 Abul Kalam. All Rights Reserved.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a
+          href="#home"
+          class="text-sky-400 hover:text-sky-300 transition-colors"
+        >
+          ↑ Back to Top
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
